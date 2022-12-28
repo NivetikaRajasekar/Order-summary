@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color:  #e0e8ff;
+    font-size: 16px;
+}
+#container{
+    width: 375px;
+    height: 600px;
+    margin-top:15%;
+    margin-bottom: 15%;
+    margin-left: 30px;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+#child{
+    width: 375px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+h3{
+    padding: 20px;
+    margin-left: 25%;
+    font-weight: 900%;
+}
+#text-content{
+    padding: 20px;
+    margin-top:-10px;
+    opacity:0.5;
+    text-align: center; /*literally cool way to align text in center*/
+    line-height: 1.6rem; /*line height works correctly when there is font-size*/
+    
+}
+#pricing-container{
+    width: 85%;
+    background-color: #f5f7ff;
+    height: 70px;
+    margin-left:28px;
+    margin-right: 28px;
+    margin-top:5px;
+    border-radius: 5px;
+    display: flex;
+}
+#pricing-container img{
+    width: 50px;
+    height: 50px;
+    margin-left:15px;
+    margin-top:10px;
+}
+#plan-price{
+    margin-left: 20px;
+    margin-top: 12px;
+}
+#plan-price p{
+    opacity: 0.5;
+    margin-top:5px;
+}
+#pricing-container a{
+    margin-left: 22%;
+    margin-top: 20px;
+    color:#3829e0;
+    font-weight: 700;
+}
+
+button{
+    width: 85%;
+    height: 50px;
+    margin-top: 25px;
+    margin-left:28px;
+    margin-right: 28px;
+    border-color: #3829e0;
+    background-color: #3829e0;
+    border-radius: 10px;
+    box-shadow:  8px 28px 28px -2px rgba(224,232,255,0.64);
+    cursor:pointer;
+    color:white;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+}
+
+#cancel-item{
+    margin-top: 28px;
+    margin-left: 35%;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+@media(min-width:576px){
+    *{
+        box-sizing: border-box;
+    }
+    body{
+    background: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-color:  #e0e8ff;
+    }
+    #container{
+        width:375px;
+        height:550px;
+        margin-left:35%;
+        padding:0;
+        margin-top: 2%;
+        margin-bottom:2%
+    }
+    #text-content{
+        font-size: 0.8rem;
+    }
+    #price-container{
+        margin-bottom:10px;
+    }
+    #container img{
+        width:375px;
+    }
+    #pricing-container a{
+        margin-right:5px;
+    }
+}
